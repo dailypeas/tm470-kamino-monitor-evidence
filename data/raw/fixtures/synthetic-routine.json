@@ -1,0 +1,45 @@
+{
+  "fixture_version": "1.0",
+  "case_id": "SYN-ROUTINE-001",
+  "case_type": "synthetic test case",
+  "ground_truth": "not applicable; designed to exercise non-triggering logic",
+  "transactions": [
+    {
+      "signature": "SyntheticRoutine111111111111111111111111111111111111111111111111111111111111",
+      "timestamp": 1783918800,
+      "status": "success",
+      "error": null,
+      "fee_payer": "SyntheticWallet11111111111111111111111111111111",
+      "account_keys": [],
+      "invoked_program_ids": ["KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"],
+      "token_transfers": [],
+      "source_type": "fixture",
+      "source_case_id": "SYN-ROUTINE-001"
+    },
+    {
+      "signature": "SyntheticRoutine222222222222222222222222222222222222222222222222222222222222",
+      "timestamp": 1783922400,
+      "status": "success",
+      "error": null,
+      "fee_payer": "SyntheticWallet11111111111111111111111111111111",
+      "account_keys": [],
+      "invoked_program_ids": ["KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"],
+      "token_transfers": [],
+      "source_type": "fixture",
+      "source_case_id": "SYN-ROUTINE-001"
+    },
+    {
+      "signature": "SyntheticRoutine333333333333333333333333333333333333333333333333333333333333",
+      "timestamp": 1783926000,
+      "status": "success",
+      "error": null,
+      "fee_payer": "SyntheticWallet11111111111111111111111111111111",
+      "account_keys": [],
+      "invoked_program_ids": ["KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"],
+      "token_transfers": [],
+      "source_type": "fixture",
+      "source_case_id": "SYN-ROUTINE-001"
+    }
+  ]
+}
+

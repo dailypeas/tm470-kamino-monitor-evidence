@@ -1,0 +1,7 @@
+# Provisional project assumptions; not validated fraud-detection thresholds.
+rapid_relevant_activity:
+  count: 3
+  window_seconds: 600
+repeated_failed_relevant_transactions:
+  count: 2
+  window_seconds: 600

@@ -1,0 +1,57 @@
+{
+  "fixture_version": "1.0",
+  "case_id": "SYN-TRIGGER-001",
+  "case_type": "synthetic test case",
+  "ground_truth": "not applicable; designed to trigger both prototype indicators",
+  "transactions": [
+    {
+      "signature": "SyntheticTrigger111111111111111111111111111111111111111111111111111111111111",
+      "timestamp": 1783926000,
+      "status": "failed",
+      "error": "SyntheticFailureA",
+      "fee_payer": "SyntheticWallet22222222222222222222222222222222",
+      "account_keys": [],
+      "invoked_program_ids": ["KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"],
+      "token_transfers": [],
+      "source_type": "fixture",
+      "source_case_id": "SYN-TRIGGER-001"
+    },
+    {
+      "signature": "SyntheticTrigger222222222222222222222222222222222222222222222222222222222222",
+      "timestamp": 1783926240,
+      "status": "failed",
+      "error": "SyntheticFailureB",
+      "fee_payer": "SyntheticWallet22222222222222222222222222222222",
+      "account_keys": [],
+      "invoked_program_ids": ["KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"],
+      "token_transfers": [],
+      "source_type": "fixture",
+      "source_case_id": "SYN-TRIGGER-001"
+    },
+    {
+      "signature": "SyntheticTrigger333333333333333333333333333333333333333333333333333333333333",
+      "timestamp": 1783926480,
+      "status": "success",
+      "error": null,
+      "fee_payer": "SyntheticWallet22222222222222222222222222222222",
+      "account_keys": [],
+      "invoked_program_ids": ["KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"],
+      "token_transfers": [],
+      "source_type": "fixture",
+      "source_case_id": "SYN-TRIGGER-001"
+    },
+    {
+      "signature": "SyntheticNonKamino1111111111111111111111111111111111111111111111111111111111",
+      "timestamp": 1783926540,
+      "status": "failed",
+      "error": "SyntheticUnrelatedFailure",
+      "fee_payer": "SyntheticWallet22222222222222222222222222222222",
+      "account_keys": [],
+      "invoked_program_ids": ["11111111111111111111111111111111"],
+      "token_transfers": [],
+      "source_type": "fixture",
+      "source_case_id": "SYN-TRIGGER-001"
+    }
+  ]
+}
+

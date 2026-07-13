@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-13T08:01:03.870457+00:00",
+  "case_id": "SYN-TRIGGER-001",
+  "thresholds": {
+    "rapid_count": 3,
+    "rapid_window_seconds": 600,
+    "failure_count": 2,
+    "failure_window_seconds": 600
+  },
+  "records": [
+    {
+      "signature": "SyntheticTrigger111111111111111111111111111111111111111111111111111111111111",
+      "timestamp": 1783926000,
+      "status": "failed",
+      "error": "SyntheticFailureA",
+      "fee_payer": "SyntheticWallet22222222222222222222222222222222",
+      "account_keys": [],
+      "invoked_program_ids": [
+        "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"
+      ],
+      "kamino_relevance": "direct",
+      "token_transfers": [],
+      "source_type": "fixture",
+      "source_case_id": "SYN-TRIGGER-001",
+      "indicators": {
+        "rapid_relevant_activity": {
+          "status": "evaluated",
+          "triggered": false,
+          "observed_count": 1,
+          "threshold_count": 3,
+          "window_seconds": 600,
+          "reason": "1 directly Kamino-related transactions were observed in the preceding 10 minutes (provisional threshold: 3)."
+        },
+        "repeated_failed_relevant_transactions": {
+          "status": "evaluated",
+          "triggered": false,
+          "observed_count": 1,
+          "threshold_count": 2,
+          "window_seconds": 600,
+          "reason": "1 failed directly Kamino-related transactions were observed in the preceding 10 minutes (provisional threshold: 2)."
+        }
+      },
+      "priority": "no_elevated_indicator_observed",
+      "output_caveat": "Priority supports manual technical review; it is not a probability or finding of maliciousness."
+    },
+    {
+      "signature": "SyntheticTrigger222222222222222222222222222222222222222222222222222222222222",
+      "timestamp": 1783926240,
+      "status": "failed",
+      "error": "SyntheticFailureB",
+      "fee_payer": "SyntheticWallet22222222222222222222222222222222",
+      "account_keys": [],
+      "invoked_program_ids": [
+        "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"
+      ],
+      "kamino_relevance": "direct",
+      "token_transfers": [],
+      "source_type": "fixture",
+      "source_case_id": "SYN-TRIGGER-001",
+      "indicators": {
+        "rapid_relevant_activity": {
+          "status": "evaluated",
+          "triggered": false,
+          "observed_count": 2,
+          "threshold_count": 3,
+          "window_seconds": 600,
+          "reason": "2 directly Kamino-related transactions were observed in the preceding 10 minutes (provisional threshold: 3)."
+        },
+        "repeated_failed_relevant_transactions": {
+          "status": "evaluated",
+          "triggered": true,
+          "observed_count": 2,
+          "threshold_count": 2,
+          "window_seconds": 600,
+          "reason": "2 failed directly Kamino-related transactions were observed in the preceding 10 minutes (provisional threshold: 2)."
+        }
+      },
+      "priority": "moderate",
+      "output_caveat": "Priority supports manual technical review; it is not a probability or finding of maliciousness."
+    },
+    {
+      "signature": "SyntheticTrigger333333333333333333333333333333333333333333333333333333333333",
+      "timestamp": 1783926480,
+      "status": "success",
+      "error": null,
+      "fee_payer": "SyntheticWallet22222222222222222222222222222222",
+      "account_keys": [],
+      "invoked_program_ids": [
+        "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"
+      ],
+      "kamino_relevance": "direct",
+      "token_transfers": [],
+      "source_type": "fixture",
+      "source_case_id": "SYN-TRIGGER-001",
+      "indicators": {
+        "rapid_relevant_activity": {
+          "status": "evaluated",
+          "triggered": true,
+          "observed_count": 3,
+          "threshold_count": 3,
+          "window_seconds": 600,
+          "reason": "3 directly Kamino-related transactions were observed in the preceding 10 minutes (provisional threshold: 3)."
+        },
+        "repeated_failed_relevant_transactions": {
+          "status": "evaluated",
+          "triggered": true,
+          "observed_count": 2,
+          "threshold_count": 2,
+          "window_seconds": 600,
+          "reason": "2 failed directly Kamino-related transactions were observed in the preceding 10 minutes (provisional threshold: 2)."
+        }
+      },
+      "priority": "elevated",
+      "output_caveat": "Priority supports manual technical review; it is not a probability or finding of maliciousness."
+    },
+    {
+      "signature": "SyntheticNonKamino1111111111111111111111111111111111111111111111111111111111",
+      "timestamp": 1783926540,
+      "status": "failed",
+      "error": "SyntheticUnrelatedFailure",
+      "fee_payer": "SyntheticWallet22222222222222222222222222222222",
+      "account_keys": [],
+      "invoked_program_ids": [
+        "11111111111111111111111111111111"
+      ],
+      "kamino_relevance": "not_direct",
+      "token_transfers": [],
+      "source_type": "fixture",
+      "source_case_id": "SYN-TRIGGER-001",
+      "indicators": {
+        "rapid_relevant_activity": {
+          "status": "not_evaluated",
+          "triggered": null,
+          "reason": "Transaction is not a verified direct invocation of the configured Kamino Lending programme."
+        },
+        "repeated_failed_relevant_transactions": {
+          "status": "not_evaluated",
+          "triggered": null,
+          "reason": "Transaction is not a verified direct invocation of the configured Kamino Lending programme."
+        }
+      },
+      "priority": "no_elevated_indicator_observed",
+      "output_caveat": "Priority supports manual technical review; it is not a probability or finding of maliciousness."
+    }
+  ],
+  "summary": {
+    "transaction_count": 4,
+    "direct_kamino_count": 3,
+    "priority_counts": {
+      "elevated": 1,
+      "moderate": 1,
+      "low": 0,
+      "no_elevated_indicator_observed": 2
+    }
+  },
+  "limitations": [
+    "Direct invocation of one configured Kamino Lending mainnet programme is the only relevance test.",
+    "Thresholds are provisional project assumptions and are not validated fraud thresholds.",
+    "No ground-truth maliciousness labels are inferred."
+  ]
+}

@@ -1,0 +1,22 @@
+Command executed on 13 July 2026:
+
+PYTHONPATH=src python3 -m unittest discover -s tests -v
+
+Result:
+
+test_fixture_command_writes_json_and_csv (test_cli.CliTests.test_fixture_command_writes_json_and_csv) ... ok
+test_malformed_json_returns_controlled_error (test_cli.CliTests.test_malformed_json_returns_controlled_error) ... ok
+test_both_indicators_trigger_at_inclusive_boundary (test_core.CoreTests.test_both_indicators_trigger_at_inclusive_boundary) ... ok
+test_invalid_fixture_is_rejected (test_core.CoreTests.test_invalid_fixture_is_rejected) ... ok
+test_missing_timestamp_is_not_evaluated (test_core.CoreTests.test_missing_timestamp_is_not_evaluated) ... ok
+test_non_kamino_transaction_is_not_evaluated (test_core.CoreTests.test_non_kamino_transaction_is_not_evaluated) ... ok
+test_record_just_outside_window_is_excluded (test_core.CoreTests.test_record_just_outside_window_is_excluded) ... ok
+test_rpc_program_index_is_resolved (test_core.CoreTests.test_rpc_program_index_is_resolved) ... ok
+test_thresholds_must_be_positive (test_core.CoreTests.test_thresholds_must_be_positive) ... ok
+test_unknown_status_does_not_become_success (test_core.CoreTests.test_unknown_status_does_not_become_success) ... ok
+
+Ran 10 tests in 0.002s
+
+OK
+
+Note: the malformed-input test intentionally writes an invalid temporary JSON file and verifies that the CLI returns exit code 2. The CLI's expected error message was displayed during this run.

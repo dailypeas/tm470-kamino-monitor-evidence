@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kamino-monitor"
+version = "0.1.0"
+description = "Explainable prototype for prioritising Kamino-related Solana activity"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+kamino-monitor = "kamino_monitor.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
